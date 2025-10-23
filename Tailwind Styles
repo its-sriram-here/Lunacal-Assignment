@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the default font and dark mode */
+body {
+  font-family: 'Inter', sans-serif;
+}
