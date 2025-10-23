@@ -1,0 +1,29 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      // --- ADD THIS SECTION ---
+      // We define the keyframes for our animation
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0.3', transform: 'scale(0.98)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        }
+      },
+      // And we register 'fadeIn' as an animation class
+      animation: {
+        fadeIn: 'fadeIn 0.3s ease-in-out',
+      }
+      // --- END OF ADDED SECTION ---
+    },
+  },
+  plugins: [],
+}
+
